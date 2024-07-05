@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body style="color: lightblue;">
+    <div class="container">
+        <div class="calculator">
+            <form >
+                <div class="wraapper">
+                    <input type="text" class="display" name="item">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="item.value = ''">
+                    <input type="button" value="DE" onclick="item.value = item.value.toString().slice(0,-1)">
+                    <input type="button" value="*" onclick="item.value += '*'">
+                    <input type="button" value="/" onclick="item.value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="item.value += '7'">
+                    <input type="button" value="8" onclick="item.value += '8'">
+                    <input type="button" value="9" onclick="item.value += '9'">
+                    <input type="button" value="-" onclick="item.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="6" onclick="item.value += '6'">
+                    <input type="button" value="5" onclick="item.value += '5'">
+                    <input type="button" value="4" onclick="item.value += '4'">
+                    <input type="button" value="+" onclick="item.value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="3" onclick="item.value += '3'">
+                    <input type="button" value="2" onclick="item.value += '2'">
+                    <input type="button" value="1" onclick="item.value += '1'">
+                    <input type="button" value="=" onclick="item.value = eval(item.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
